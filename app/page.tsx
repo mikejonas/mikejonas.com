@@ -7,14 +7,16 @@ export default function Home() {
     <div className="flex mt-4">
       <a
         href="https://github.com/mikejonas"
-        className="text-3xl mr-4 hover:text-gray-300 transition-colors"
+        className="text-3xl mr-2 hover:text-gray-300 transition-colors"
+        target="_blank"
         style={{ color: "inherit" }} // ensures the color inherits from the parent for easier theming
       >
         <FaGithub aria-label="GitHub" size={ICON_SIZE} />
       </a>
       <a
         href="https://www.linkedin.com/in/mikejonas"
-        className="text-3xl mr-4 hover:text-gray-300 transition-colors"
+        className="text-3xl mr-2 hover:text-gray-300 transition-colors"
+        target="_blank"
         style={{ color: "inherit" }}
       >
         <FaLinkedin aria-label="LinkedIn" size={ICON_SIZE} />
@@ -22,6 +24,7 @@ export default function Home() {
       <a
         href="https://www.instagram.com/mikejonas_"
         className="text-3xl hover:text-gray-300 transition-colors"
+        target="_blank"
         style={{ color: "inherit" }}
       >
         <FaInstagram aria-label="Instagram" size={ICON_SIZE} />
