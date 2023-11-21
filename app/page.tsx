@@ -1,5 +1,4 @@
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
-import Head from "next/head";
 
 export default function Home() {
   const renderSocialIcons = () => (
@@ -40,24 +39,11 @@ export default function Home() {
     );
   };
 
-  const HtmlHead = () => (
-    <Head>
-      <title>Mike Jonas</title>
-      <meta
-        name="description"
-        content="Software engineer and BMX rider in San Francisco"
-      />
-    </Head>
-  );
-
   return (
-    <>
-      {HtmlHead()}
-      <div className="bg-zinc-950 text-gray-100 min-h-screen flex flex-col items-start px-10 py-20 space-y-6">
-        <h1 className="text-5xl font-serif font-bold">Mike Jonas</h1>
-        {renderSocialIcons()}
-        {/* {body()} */}
-      </div>
-    </>
+    <div className="bg-zinc-950 text-gray-100 min-h-screen flex flex-col items-start px-10 py-20 space-y-6">
+      <h1 className="text-5xl font-serif font-bold">Mike Jonas</h1>
+      {renderSocialIcons()}
+      {/* {body()} */}
+    </div>
   );
 }
