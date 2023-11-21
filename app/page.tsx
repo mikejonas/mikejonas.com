@@ -41,7 +41,7 @@ export default function Home() {
 
   return (
     <div className="bg-zinc-950 text-gray-100 min-h-screen flex flex-col items-start px-10 py-20 space-y-6">
-      <h1 className="text-5xl font-serif font-bold">Mike Jonas</h1>
+      <h1 className="text-5xl font-bold">Mike Jonas</h1>
       {renderSocialIcons()}
       {/* {body()} */}
     </div>
